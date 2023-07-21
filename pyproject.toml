@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "elasticsearch-cosine-similarity"
+version = "0.1.0"
+description = "test elastic search"
+authors = ["HIR0-728 <70585820+HIR0-728@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "elasticsearch_cosine_similarity"}]
+
+[tool.poetry.dependencies]
+python = "3.11.3"
+elasticsearch = "^8.8.2"
+numpy = "^1.25.1"
+pandas = "^2.0.3"
+joblib = "^1.3.1"
+scipy = "^1.11.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "23.3.0"
+isort = "5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
